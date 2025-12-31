@@ -1,0 +1,70 @@
+# ============================================
+# FLASHLOAN ARBITRAGE BOT - CONFIGURATION
+# ============================================
+# Rename this file to .env and fill in your values
+
+# ============================================
+# ALCHEMY API (Required - Get free at alchemy.com)
+# ============================================
+ALCHEMY_API_KEY=your_alchemy_api_key_here
+
+# ============================================
+# NETWORK SELECTION
+# Options: polygon (recommended), arbitrum, optimism
+# Start with polygon for lowest gas costs
+# ============================================
+NETWORK=polygon
+
+# ============================================
+# TRADING PARAMETERS
+# ============================================
+# Minimum profit in USD before executing a trade
+MIN_PROFIT_USD=0.50
+
+# Maximum gas price to pay (in gwei)
+MAX_GAS_PRICE_GWEI=100
+
+# Slippage tolerance percentage
+SLIPPAGE_TOLERANCE=0.5
+
+# ============================================
+# WALLET (Only add when ready for real trades)
+# ============================================
+# Your private key - NEVER share this!
+# Leave empty for simulation mode
+PRIVATE_KEY=
+
+# ============================================
+# FLASHLOAN CONTRACT (After deployment)
+# ============================================
+# Deploy FlashloanExecutor.sol contract first
+# Then add the deployed contract address here
+FLASHLOAN_CONTRACT_ADDRESS=
+
+# ============================================
+# GASLESS PROVIDERS (All Optional)
+# See GASLESS-OPTIONS.md for setup guides
+# ============================================
+
+# Gelato - Best for arbitrage bots (takes fee from profit)
+# Get key: https://app.gelato.network
+GELATO_API_KEY=
+
+# Biconomy - Best for dApps (pay gas in any ERC20)
+# Get key: https://dashboard.biconomy.io
+BICONOMY_API_KEY=
+
+# 1inch Fusion - Gasless token swaps
+# Get key: https://portal.1inch.dev
+ONEINCH_API_KEY=
+
+# ERC-4337 Bundlers (Account Abstraction)
+# Pimlico: https://pimlico.io
+PIMLICO_API_KEY=
+# StackUp: https://stackup.sh
+STACKUP_API_KEY=
+
+# ============================================
+# LOGGING
+# ============================================
+LOG_LEVEL=info
