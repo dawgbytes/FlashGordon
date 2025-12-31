@@ -1,0 +1,41 @@
+{
+  "name": "flash-gordon",
+  "version": "2.1.0",
+  "description": "Flash Gordon - Automated flashloan arbitrage bot with gasless execution",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "monitor": "node src/priceMonitor.js",
+    "execute": "node src/executor.js",
+    "test-connection": "node test-connection.js",
+    "dev": "netlify dev",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "netlify deploy --prod",
+    "deploy:preview": "netlify deploy"
+  },
+  "dependencies": {
+    "ethers": "^6.9.0",
+    "alchemy-sdk": "^3.1.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.10.0",
+    "nodemon": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "flashloan",
+    "arbitrage",
+    "defi",
+    "aave",
+    "uniswap",
+    "netlify"
+  ],
+  "author": "",
+  "license": "MIT"
+}
